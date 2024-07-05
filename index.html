@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+    <script src="https://kit.fontawesome.com/f154d3ce2f.js" crossorigin="anonymous"></script>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <p class="logo"><span class="span1">P</span>ortfolio</p> 
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>I am <span class="span1">Yashwanth Arikathota</span></h1>
+                <p>MERN Stack Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/photo1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, My name is Yashwanth Arikathota, and this is my Personal Portfolio
+                         Website. I am currently pursuing a Bachelor of Technology in Computer 
+                         Science and Engineering at the National Institute of Technology Andhra 
+                         Pradesh. I am interested in developing problem-solving skills, and I enjoy 
+                         coding. Apart from that, I love traveling and watching movies.</p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('education')">Education</div>
+                        <div class="tab-links" onclick="opentab('achievements')">Achievements</div>
+                        <div class="tab-links" onclick="opentab('address')">Address</div>
+                        <div class="tab-links" onclick="opentab('Skills')">Skills</div>
+                        <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2018-2019</span><br>10th</li>
+                            <li><span>2019-2021</span><br>Intermediate</li>
+                            <li><span>2021-2025</span><br>BTech in CSE</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>SSC</span><br>Secured 10.0 CGPA in 10th</li>
+                            <li><span>Jee Mains</span><br>Secured 98.47 Percentile in Jee Mains 2021</li>
+                            <li><span>Jee Advanced</span><br>Secured 12472 AIR in Jee Advanced 2021 </li>
+                            <li><span>Btech</span><br>Secured 7.61 CGPA in BTech</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="address">
+                        <ul>
+                            <li><span>Country</span><br>India</li>
+                            <li><span>State</span><br>Andhra Pradesh</li>
+                            <li><span>District</span><br>Visakhapatnam</li>
+                            <li><span>Mandal</span><br>Pendurthi</li>
+                            <li><span>Pincode</span><br>530051</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li><span>Frontend Web Development</span><br>HTML / CSS / Java Script / React</li>
+                            <li><span>Backend Web Development</span><br>NodeJS / ExpressJS</li>
+                            <li><span>Coding</span><br>C++ / Java</li>
+                            <li><span>Database</span><br>MySQL / MongoDb</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <p>Will be updated soon..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div class="skills">
+                    <i class="fa-brands fa-html5"></i>
+                    <h2>HTML</h2>
+                    <p>HTML (HyperText Markup Language) is a foundational language for creating and 
+                    structuring content on the World Wide Web. It uses a system of tags to define
+                    and organize various elements within a web page, such as headings, paragraphs,
+                    images, and links.</p>
+                </div>
+                <div class="skills">
+                    <i class="fa-brands fa-css3"></i>
+                    <h2>CSS</h2>
+                    <p>Cascading Style Sheets (CSS) is a styling language used to enhance the presentation
+                        of HTML documents. It allows web developers to control the layout, appearance,
+                        and design of web pages, providing flexibility and consistency across different
+                        devices. </p>
+                </div>
+                <div class="skills">
+                    <i class="fa-brands fa-square-js"></i>
+                    <h2>Java Script</h2>
+                    
+                    <p>JavaScript is a versatile and widely used programming language that adds
+                        interactivity and dynamic behavior to web pages. It is commonly employed 
+                        in front-end development to create responsive and engaging user interfaces.</p>
+                </div>
+                <div class="skills">
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                    <p>Java is a high-level, versatile, and object-oriented programming language
+                         renowned for its platform independence. It uses the Java Virtual Machine 
+                         (JVM) to execute code, allowing developers to write applications that can
+                          run on various operating systems. </p>
+                </div>
+                <div class="skills">
+                    <i class="fa-solid fa-code"></i>
+                    <h2>C++</h2>
+                    <p>C++ is a powerful, general-purpose programming language that supports 
+                        object-oriented programming (OOP) principles. It allows developers to
+                        structure their code using classes and objects, promoting code organization, 
+                        reusability, and encapsulation.</p>
+                </div>
+                <div class="skills">
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL</h2>
+                    <p>SQL (Structured Query Language) is a domain-specific language designed
+                         for managing and manipulating relational databases. It provides a standardized
+                          way to interact with databases, allowing users to create, retrieve, update,
+                           and delete data.</p>
+                </div>
+                <div class="skills">
+                    <i class="fa-brands fa-node"></i>
+                    <h2>Node JS</h2>
+                    <p> Node.js is particularly well-suited for developing server-side 
+                        and networking applications using Java Script. Its package manager,
+                         npm, is one of the largest ecosystems of open-source libraries, contributing
+                          to the popularity and flexibility of Node.js in web development.</p>
+                </div>
+                <div class="skills">
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React JS</h2>
+                    <p> ReactJS is a popular JavaScript library for building user interfaces, primarily for single-page applications.
+                        React allows developers to create reusable UI components, making the development process more efficient. It
+                         utilizes a virtual DOM to optimize rendering and improve performance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>Web Design</h2>
+                    <p>Welcome to Web Development Services, where I personally dedicate myself to bringing your digital 
+                        aspirations to life. As the developer, I specialize in crafting dynamic
+                        and user-friendly websites with the latest technologies and industry best practices to deliver 
+                        websites.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX Design, short for User Interface and User Experience Design, is a 
+                        crucial aspect of creating digital products. UI focuses on the visual elements
+                         and interactions, ensuring a visually appealing and intuitive interface,
+                          while UX concentrates on enhancing the overall user experience by optimizing
+                           usability and accessibility.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>App design is the process of creating a user-friendly and
+                         visually appealing interface for mobile applications. It involves a 
+                         comprehensive understanding of user needs, behaviors.The process typically includes wireframing, 
+                          prototyping, and iterative testing to ensure the app meets both user
+                           expectations and business objectives.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="./images/food.jpg">
+                    <div class="layer">
+                        <h3>Food Delivery Website</h3>
+                        <p>This website allows users to add food items to cart and then make payment and place their food order</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>  
+                </div>
+                <div class="project">
+                    <img src="./images/work-2.png">
+                    <div class="layer">
+                        <h3>Spotify Website</h3>
+                        <p>This app entertains you with many songs of different languages.
+                            It also includes various categories.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+                <div class="project">
+                    <img src="./images/work-3.png">
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>This app helps you to purchase different items.
+                            It displays cost and rating of each item.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div> 
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>arikathotayashwanth2003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 8125636547</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/yashwanth.arikathota/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/yashwanth_1222/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/yashwanth-arikathota-4b49a6228/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/yashwanth2212/"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a class="btn btn2" href="./Resume.pdf" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <a class="btn" href="#header"><i class="fa-solid fa-arrow-up"></i></a>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> <span id="current-year"></span> Made with <i class="fa-solid fa-heart"></i> by Yashwanth Arikathota | All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
